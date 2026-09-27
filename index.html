@@ -163,7 +163,7 @@
   .pvbar button.is-on{background:var(--k-accent);border-color:var(--k-accent);color:#fff}
   .pvbar button:focus-visible{outline:2px solid var(--k-accent);outline-offset:2px}
 </style>
-<div class="pvbar"><b>Preview &mdash; all pages</b><button data-go="home" class="is-on">Home</button><button data-go="pricing">Programmes</button><button data-go="protocol">12-Week Protocol</button><button data-go="baseline">4-Week Baseline</button><button data-go="panel">What we test</button><button data-go="evidence">The evidence</button><button data-go="assessment">Assessment</button><button data-go="calculator">Free T Calculator</button><button data-go="converter">Unit Converter</button><button data-go="about">About</button><button data-go="safety">Safety</button><button data-go="notforyou">Not for you</button></div>
+<div class="pvbar"><b>Preview &mdash; all pages</b><button data-go="home" class="is-on">Home</button><button data-go="report">Get a report</button><button data-go="pricing">Programmes</button><button data-go="protocol">12-Week Protocol</button><button data-go="baseline">4-Week Baseline</button><button data-go="panel">What we test</button><button data-go="evidence">The evidence</button><button data-go="assessment">Assessment</button><button data-go="calculator">Free T Calculator</button><button data-go="converter">Unit Converter</button><button data-go="about">About</button><button data-go="safety">Safety</button><button data-go="notforyou">Not for you</button></div>
 
 <header class="kh2" id="kh2-hdr">
   <div class="k-wrap kh2__in">
@@ -175,6 +175,10 @@
       
         
           <a href="#home" >Home</a>
+        
+      
+        
+          <a href="#report" >Get a report</a>
         
       
         
@@ -200,7 +204,7 @@
     </nav>
 
     
-      <a class="kh2__cta" href="#assessment">Take the assessment</a>
+      <a class="kh2__cta" href="#report">Get my report</a>
     
 
     <button class="kh2__burger" data-burger aria-expanded="false" aria-controls="kh2-m-hdr" aria-label="Menu">
@@ -213,6 +217,10 @@
       
         
           <a href="#home">Home</a>
+        
+      
+        
+          <a href="#report">Get a report</a>
         
       
         
@@ -236,7 +244,7 @@
         
       
       
-        <a class="kh2__mcta" href="#assessment">Take the assessment</a>
+        <a class="kh2__mcta" href="#report">Get my report</a>
       
     </div>
   </div>
@@ -986,6 +994,316 @@
     color:var(--k-accent);transition:gap .18s}
   .kc__card:hover .kc__link{gap:11px}
 </style>
+
+
+</div><div class="pg" id="pg-report" hidden>
+
+<section class="ki" id="ki-report0">
+  <div class="k-wrap ki__wrap">
+
+    <div class="ki__head">
+      <p class="k-eyebrow k-rise" data-k-rise>The Keel Report</p>
+      <h1 class="k-h1 ki__h1 k-rise" data-k-rise>Send us your bloods. Get them explained properly.</h1>
+      <p class="k-lede k-rise" data-k-rise>Upload the report your laboratory gave you. Within 24 hours you get it back translated — every marker in plain language, your free testosterone calculated, and a ranked list of what is most likely working against you.</p>
+    </div>
+
+    <div class="ki__grid">
+
+      
+      <div class="ki__form-col k-rise" data-k-rise>
+        <form class="ki__form" method="post" action="/cart/add" enctype="multipart/form-data" novalidate>
+
+          <ol class="ki__steps">
+
+            <li class="ki__step">
+              <span class="ki__n">1</span>
+              <div class="ki__f">
+                <h2 class="ki__label">Your blood results</h2>
+                <p class="ki__hint">The PDF your lab emailed you, or a clear photo of the printout. Both work. If a marker is missing we will tell you which one to add next time.</p>
+
+                <div class="ki__drop" data-drop>
+                  <input type="file" id="ki-file-report0" name="properties[Lab report]"
+                         accept=".pdf,.jpg,.jpeg,.png,.webp" data-file>
+                  <label for="ki-file-report0" class="ki__droplabel">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+                      <path d="M11 15V4m0 0L6.5 8.5M11 4l4.5 4.5M3 15v2.5A1.5 1.5 0 0 0 4.5 19h13a1.5 1.5 0 0 0 1.5-1.5V15"
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span data-dropmsg><b>Choose your lab report</b><i>PDF or a photo &middot; up to 20&nbsp;MB</i></span>
+                  </label>
+                </div>
+
+                <button type="button" class="ki__toggle" data-toggle-manual>
+                  Results only in an app, or on paper? Type them instead
+                </button>
+
+                <div class="ki__manual" data-manual hidden>
+                  <div class="ki__row">
+                    <label>Total testosterone <span>nmol/L</span>
+                      <input type="number" step="any" name="properties[Total testosterone nmol/L]" placeholder="15.2"></label>
+                    <label>SHBG <span>nmol/L</span>
+                      <input type="number" step="any" name="properties[SHBG nmol/L]" placeholder="35"></label>
+                  </div>
+                  <div class="ki__row">
+                    <label>Albumin <span>g/L</span>
+                      <input type="number" step="any" name="properties[Albumin g/L]" placeholder="43"></label>
+                    <label>Draw date
+                      <input type="date" name="properties[Draw date]"></label>
+                  </div>
+                  <p class="ki__hint">Anything else on the panel &mdash; LH, FSH, vitamin D, ferritin &mdash; add it in the notes below. More markers, better report.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="ki__step">
+              <span class="ki__n">2</span>
+              <div class="ki__f">
+                <h2 class="ki__label">Context</h2>
+                <p class="ki__hint">Optional, but it changes the report. Testosterone varies through the day, so when you gave blood matters as much as the number.</p>
+                <div class="ki__row">
+                  <label>Age
+                    <input type="number" name="properties[Age]" min="18" max="99" placeholder="38"></label>
+                  <label>Draw time
+                    <select name="properties[Draw time]">
+                      <option value="">Select…</option>
+                      <option>Before 9am, fasting</option>
+                      <option>Before 9am, not fasting</option>
+                      <option>9am–midday</option>
+                      <option>Afternoon or later</option>
+                      <option>Not sure</option>
+                    </select></label>
+                </div>
+                <label class="ki__full">Anything we should know
+                  <textarea name="properties[Notes]" rows="3"
+                    placeholder="Symptoms, medications, other markers on the panel, what you've already tried."></textarea></label>
+              </div>
+            </li>
+
+            <li class="ki__step">
+              <span class="ki__n">3</span>
+              <div class="ki__f">
+                <h2 class="ki__label">Consent</h2>
+                <label class="ki__check">
+                  <input type="checkbox" name="properties[Consent]" value="Given" required data-consent>
+                  <span>I consent to Keel using the health information I upload to produce my report. I understand the raw file is deleted once the report is generated, and that Keel is a coaching and education service, not a medical practice.</span>
+                </label>
+                <label class="ki__check">
+                  <input type="checkbox" name="properties[Not on TRT]" value="Confirmed" required data-consent>
+                  <span>I am 18 or over and I am not currently taking testosterone, hCG, clomiphene or enclomiphene.</span>
+                </label>
+              </div>
+            </li>
+          </ol>
+
+          
+            <fieldset class="ki__plans">
+              <legend>How often</legend>
+              
+                
+                  <label class="ki__plan">
+                    <input type="radio" name="selling_plan" value="101"
+                           checked>
+                    <span class="ki__plan-body">
+                      <b>Report now, then a retest every 12 weeks</b>
+                      <i>A$59 today, then A$49 every 12 weeks. Cancel in one click, any time.</i>
+                    </span>
+                  </label>
+                
+                  <label class="ki__plan">
+                    <input type="radio" name="selling_plan" value="102"
+                           >
+                    <span class="ki__plan-body">
+                      <b>Report now, then a retest every 6 months</b>
+                      <i>A$59 today, then A$49 every 6 months. Cancel in one click, any time.</i>
+                    </span>
+                  </label>
+                
+              
+              <label class="ki__plan">
+                <input type="radio" name="selling_plan" value="">
+                <span class="ki__plan-body"><b>One report, no repeat</b><i>A single report. Nothing recurring.</i></span>
+              </label>
+            </fieldset>
+          
+
+          <button type="submit" name="add" class="ki__submit" data-submit>
+            Send my results
+          </button>
+          <p class="ki__sub-note">Report within 24 hours · cancel any repeat at any time, in one click</p>
+        </form>
+      </div>
+
+      
+      <aside class="ki__aside">
+        <div class="ki__card k-rise" data-k-rise>
+          <h2 class="ki__card-h">What comes back</h2>
+          <ul class="ki__ticks">
+            
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>Every marker on your panel explained in plain language</span></li>
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your free and bioavailable testosterone, calculated properly (Vermeulen)</span></li>
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your result plotted against the published reference range, in nmol/L and ng/dL</span></li>
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>Your habits ranked by how much each is likely costing you</span></li>
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>What to do first, and what to ignore</span></li>
+            
+              <li><svg width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true">
+                <path d="M3.5 7.8l2.6 2.6L11.5 5" stroke="currentColor" stroke-width="1.9"
+                      stroke-linecap="round" stroke-linejoin="round"/></svg><span>Whether anything on the panel needs a doctor rather than us</span></li>
+            
+          </ul>
+        </div>
+
+        <div class="ki__card ki__card--quiet k-rise" data-k-rise>
+          <h2 class="ki__card-h">What happens to your file</h2>
+          <ul class="ki__ticks ki__ticks--plain">
+            
+            <li><span>We read it, pull the numbers, and delete the original file</span></li><li><span>We keep the numbers so your retest has something to compare against — nothing else</span></li><li><span>We never sell, share or publish your data, and we do not train anything on it</span></li><li><span>Ask us to delete everything and we do it, no questions</span></li><li><span>You can order a retest whenever you like, or never</span></li>
+          </ul>
+        </div>
+
+        <p class="ki__legal k-rise" data-k-rise>Keel is a coaching and education service, not a medical practice, and nothing in your report is a diagnosis or medical advice. If anything on your panel needs medical attention we will say so plainly and tell you to see a doctor. Recurring reports can be cancelled at any time from your account or by replying to any email — cancellation takes effect immediately and is as easy as signing up.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<style>
+  #ki-report0{background:var(--k-paper);color:var(--k-text);
+    padding:clamp(44px,7vw,88px) 0 clamp(56px,9vw,104px);font-family:var(--k-sans)}
+  #ki-report0 *{box-sizing:border-box}
+  .ki__head{max-width:56ch;margin-bottom:clamp(28px,4vw,44px)}
+  .ki__h1{color:var(--k-text);font-size:clamp(2rem,4.6vw,3rem);max-width:16ch}
+  .ki__grid{display:grid;grid-template-columns:1fr;gap:26px}
+  @media(min-width:900px){.ki__grid{grid-template-columns:1.35fr 1fr;gap:44px;align-items:start}}
+
+  .ki__steps{list-style:none;margin:0 0 24px;padding:0}
+  .ki__step{display:grid;grid-template-columns:auto 1fr;gap:16px;padding-bottom:26px;margin-bottom:26px;
+    border-bottom:1px solid var(--k-line)}
+  .ki__n{width:28px;height:28px;border-radius:50%;background:var(--k-accent-soft);color:var(--k-accent);
+    display:flex;align-items:center;justify-content:center;font-family:var(--k-display);font-size:.9375rem}
+  .ki__label{margin:2px 0 4px;font:650 1.0625rem/1.3 var(--k-sans);color:var(--k-text)}
+  .ki__hint{margin:0 0 14px;font:400 .875rem/1.6 var(--k-sans);color:var(--k-text-3)}
+
+  .ki__drop{position:relative}
+  .ki__drop input[type=file]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+  .ki__droplabel{display:flex;align-items:center;gap:13px;padding:22px;border:1.5px dashed var(--k-line);
+    border-radius:12px;cursor:pointer;color:var(--k-accent);transition:.15s;background:var(--k-bone)}
+  .ki__drop:hover .ki__droplabel,.ki__drop.is-over .ki__droplabel{border-color:var(--k-accent);background:var(--k-accent-soft)}
+  .ki__drop.is-set .ki__droplabel{border-style:solid;border-color:var(--k-accent);background:var(--k-accent-soft)}
+  .ki__droplabel b{display:block;font:650 .9375rem/1.35 var(--k-sans);color:var(--k-text)}
+  .ki__droplabel i{display:block;font:400 .8125rem/1.4 var(--k-sans);font-style:normal;color:var(--k-text-3);margin-top:2px}
+  .ki__drop input[type=file]:focus-visible + .ki__droplabel{outline:2px solid var(--k-accent);outline-offset:2px}
+
+  .ki__toggle{margin-top:12px;border:0;background:transparent;padding:6px 0;cursor:pointer;
+    font:600 .875rem/1.4 var(--k-sans);color:var(--k-accent);text-decoration:underline}
+  .ki__manual{margin-top:16px;padding-top:16px;border-top:1px solid var(--k-line)}
+  .ki__row{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:12px}
+  @media(min-width:520px){.ki__row{grid-template-columns:1fr 1fr}}
+  #ki-report0 label{display:block;font:600 .8125rem/1.4 var(--k-sans);color:var(--k-text)}
+  #ki-report0 label span{font-weight:500;color:var(--k-text-3)}
+  .ki__full{margin-top:12px}
+  #ki-report0 input[type=number],#ki-report0 input[type=date],
+  #ki-report0 select,#ki-report0 textarea{
+    width:100%;margin-top:6px;padding:11px 12px;border:1px solid var(--k-line);border-radius:9px;
+    font:400 .9375rem/1.4 var(--k-sans);background:var(--k-paper);color:var(--k-text)}
+  #ki-report0 textarea{resize:vertical}
+  #ki-report0 input:focus,#ki-report0 select:focus,#ki-report0 textarea:focus{
+    outline:2px solid var(--k-accent);outline-offset:-1px;border-color:var(--k-accent)}
+
+  .ki__check{display:flex;align-items:flex-start;gap:11px;margin-bottom:14px;
+    font:400 .875rem/1.6 var(--k-sans)!important;color:var(--k-text-2)!important}
+  .ki__check input{flex:none;margin-top:3px;width:17px;height:17px;accent-color:var(--k-accent)}
+
+  .ki__plans{border:1px solid var(--k-line);border-radius:12px;padding:18px 20px;margin-bottom:22px}
+  .ki__plans legend{padding:0 8px;font:700 .6875rem/1 var(--k-sans);letter-spacing:.09em;
+    text-transform:uppercase;color:var(--k-text-3)}
+  .ki__plan{display:flex;align-items:flex-start;gap:11px;padding:11px 0;border-bottom:1px solid var(--k-line)}
+  .ki__plan:last-child{border-bottom:0}
+  .ki__plan input{flex:none;margin-top:3px;accent-color:var(--k-accent)}
+  .ki__plan-body b{display:block;font:650 .9375rem/1.35 var(--k-sans);color:var(--k-text)}
+  .ki__plan-body i{display:block;font:400 .8125rem/1.5 var(--k-sans);font-style:normal;color:var(--k-text-3);margin-top:2px}
+
+  .ki__submit{width:100%;padding:16px;border:0;border-radius:99px;background:var(--k-accent);color:#fff;
+    font:650 1rem/1 var(--k-sans);cursor:pointer}
+  .ki__submit:hover:not(:disabled){filter:brightness(1.1)}
+  .ki__submit:disabled{opacity:.42;cursor:not-allowed}
+  .ki__submit:focus-visible{outline:2px solid var(--k-ink);outline-offset:3px}
+  .ki__sub-note{margin:12px 0 0;text-align:center;font:400 .8125rem/1.5 var(--k-sans);color:var(--k-text-3)}
+
+  .ki__card{border:1px solid var(--k-line);border-radius:12px;padding:22px 24px;margin-bottom:16px;
+    background:var(--k-accent-soft);border-color:var(--k-accent)}
+  .ki__card--quiet{background:var(--k-bone);border-color:var(--k-line)}
+  .ki__card-h{margin:0 0 14px;font:650 1rem/1.35 var(--k-sans);color:var(--k-text)}
+  .ki__ticks{list-style:none;margin:0;padding:0}
+  .ki__ticks li{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;
+    font:400 .875rem/1.6 var(--k-sans);color:var(--k-text-2)}
+  .ki__ticks svg{flex:none;margin-top:.3em;color:var(--k-accent)}
+  .ki__ticks--plain li{padding-left:14px;position:relative}
+  .ki__ticks--plain li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;
+    border-radius:50%;background:var(--k-text-3)}
+  .ki__legal{font:400 .75rem/1.65 var(--k-sans);color:var(--k-text-3);margin:0}
+</style>
+
+<script>
+(function(){
+  var r=document.getElementById('ki-report0'); if(!r) return;
+  var file=r.querySelector('[data-file]'), drop=r.querySelector('[data-drop]'),
+      msg=r.querySelector('[data-dropmsg]'), manual=r.querySelector('[data-manual]'),
+      submit=r.querySelector('[data-submit]'),
+      consents=r.querySelectorAll('[data-consent]');
+
+  function gate(){
+    var ok=true;
+    consents.forEach(function(c){ if(!c.checked) ok=false; });
+    // Either a file or a typed total testosterone is required.
+    var typed=r.querySelector('[name="properties[Total testosterone nmol/L]"]');
+    var hasData=(file.files && file.files.length) || (typed && typed.value.trim()!=='');
+    submit.disabled=!(ok && hasData);
+  }
+
+  file.addEventListener('change',function(){
+    if(file.files && file.files[0]){
+      drop.classList.add('is-set');
+      var f=file.files[0];
+      msg.innerHTML='<b>'+f.name.replace(/[<>&]/g,'')+'</b><i>'+(f.size/1048576).toFixed(1)+' MB · tap to replace</i>';
+    }
+    gate();
+  });
+  ['dragenter','dragover'].forEach(function(e){
+    drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.add('is-over');});
+  });
+  ['dragleave','drop'].forEach(function(e){
+    drop.addEventListener(e,function(){drop.classList.remove('is-over');});
+  });
+
+  r.querySelector('[data-toggle-manual]').addEventListener('click',function(){
+    manual.hidden=!manual.hidden;
+    this.textContent = manual.hidden
+      ? 'Results only in an app, or on paper? Type them instead'
+      : 'Hide manual entry — I’ll upload the report instead';
+    if(!manual.hidden) manual.querySelector('input').focus();
+    gate();
+  });
+
+  r.addEventListener('input',gate);
+  r.addEventListener('change',gate);
+  gate();
+})();
+</script>
 
 
 </div><div class="pg" id="pg-pricing" hidden>
