@@ -399,9 +399,15 @@
   .kh__cta{transition-delay:calc(var(--k-stagger) * 3)}
   .kh__proof{transition-delay:calc(var(--k-stagger) * 4)}
 
+  /* Phones: stack the photo above the text. Overlaying text on a portrait crop
+     puts the headline across the subject's face; stacking keeps both legible. */
   @media(max-width:700px){
+    #kh-home0{display:block;min-height:0}
+    .kh__media{position:relative;inset:auto;height:56svh;min-height:300px;z-index:0}
     .kh__media img{object-position:90% 45%}
-    .kh__inner{padding-top:96px}
+    .kh__veil{background:linear-gradient(180deg,rgba(10,20,32,.25) 0%,rgba(10,20,32,0) 35%,
+      rgba(10,20,32,.55) 72%,rgba(10,20,32,1) 100%)}
+    .kh__inner{position:relative;z-index:1;margin-top:-64px;padding-top:0;padding-bottom:48px}
     .kh__line{height:34%}
   }
 </style>
