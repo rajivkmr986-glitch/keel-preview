@@ -1,4 +1,4 @@
-# Keel — site preview
+# Kelo — site preview
 
 Working preview of the Keel site. Twelve pages, navigable from the bar at the top.
 
